@@ -1,0 +1,29 @@
+{
+    "name": "phonebook",
+    "version": "1.0.0",
+    "description": "A repository for the Phonebook exercise in part 3 of the Full Stack Open Course \\ by The University of Helsinki \\ Course can be found here https://fullstackopen.com/en/",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mussieh/Phonebook-Part-3-Full-Stack-Open.git"
+    },
+    "author": "Mussie Habtemichael",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^5.0.0-beta.2",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.0"
+    },
+    "bugs": {
+        "url": "https://github.com/mussieh/Phonebook-Part-3-Full-Stack-Open/issues"
+    },
+    "homepage": "https://github.com/mussieh/Phonebook-Part-3-Full-Stack-Open#readme"
+}
