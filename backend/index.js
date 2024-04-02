@@ -73,6 +73,25 @@ const generateId = () => {
     return Math.floor(Math.random() * 1000000) + 1;
 };
 
+app.put("/api/persons/:id", (request, response) => {
+    const id = Number(request.params.id);
+
+    const body = request.body;
+
+    if (!body.number) {
+        return response.status(400).json({
+            error: "Number missing",
+        });
+    }
+
+    const person = persons.find((person) => person.id === id);
+    persons = persons.filter((person) => person.id !== id);
+    person.number = body.number;
+    persons = persons.concat(person);
+
+    response.json(person);
+});
+
 app.post("/api/persons", (request, response) => {
     const body = request.body;
 
